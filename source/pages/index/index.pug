@@ -1,0 +1,13 @@
+extends ../../components/head/head
+block title
+    | about_us
+
+block main
+    div.main
+        div.opacity
+        include ../../components/menu/menu
+        div.container-form
+            include ../../components/form/form
+            +create_form("form")
+        include ../../components/mobile-menu/mobile-menu
+        include ../../components/header/header

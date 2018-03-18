@@ -1,0 +1,42 @@
+@import "./settings-style/fonts";
+@import "./settings-style/color";
+@import "./settings-style/mixin";
+
+* {
+  font-size: 1vw;
+}
+
+.opacity {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: none;
+  z-index: 2;
+  opacity: .5;
+  background-color: black;
+}
+
+
+@media (max-width: 900px) {
+  .naw-arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    position: relative;
+    top: initial;
+    bottom: 0;
+    background: url("./img/navarrow.png") #2a2d32 50% 50% no-repeat;
+    width: 50%;
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-button-next {
+    right: 0;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
