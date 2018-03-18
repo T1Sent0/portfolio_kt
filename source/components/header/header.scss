@@ -6,8 +6,8 @@
   @include padding-element(2.187em 2.06em 2.187em 2.25em);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 32.5em;
-  //background: url("./img/header.png") center / cover;
+  height: 20rem;
+  background: url("./img/header.png") center / cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +27,7 @@
     a {
       display: inline;
       font-family: 'ProximaNova_Regilar', serif;
-      font-size: 1.16em;
+      font-size: 1.16rem;
       color: $color-a-header;
       cursor: default;
       text-decoration: none;
@@ -49,10 +49,9 @@
     -ms-flex-item-align: center;
         align-self: center;
     position: relative;
-    font-size: 5.5em;
-    left: calc(50% - 7.9em);
+    font-size: 4rem;
+    left: -2.2em;
     color: $color-h1-header;
-    mix-blend-mode: overlay;
     font-family: 'ProximaNova-Black', serif;
   }
 
@@ -79,7 +78,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 640px) {
   .header {
     height: 100vh;
     background: url("./img/header_modile.png") center / cover;
