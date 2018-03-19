@@ -1,0 +1,104 @@
+.project-slider {
+  height: 42rem;
+  .bidva {
+    width: 100%;
+    height: 100%;
+    background: url("../../pages/index/img/slider-project/bidva.png") center/cover no-repeat;
+  }
+  .ipaar {
+    width: 100%;
+    height: 100%;
+    background: url("../../pages/index/img/slider-project/ipaar.png") center/cover no-repeat;
+  }
+
+  .bidvalogo {
+    background: url("../logo-slider/img/bidva-logo.png") 50% 10% no-repeat;
+    height: 5rem;
+    &:hover {
+      background: url("../logo-slider/img/bidva-logo.png") 50% 86% no-repeat;
+    }
+  }
+  .logo-ipaar {
+    background: url("../logo-slider/img/ipaar-logo.png") 50% 10% no-repeat;
+    height: 5rem;
+    &:hover {
+      background: url("../logo-slider/img/ipaar-logo.png") 50% 86% no-repeat;
+    }
+  }
+}
+.transform {
+  text-align: center;
+  width: 100%;
+  height: 85%;
+  margin: 20px auto;
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+  -moz-transform: perspective(1200px);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition:  1s linear;
+  -moz-transition: 1s linear;
+  -o-transition: 1s linear;
+  transition: 1s linear;
+  .front {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    background: white;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #f5f5f5;
+  }
+  .back {
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    background: #56c3e7;
+    color: black;
+    * {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+    a {
+      background: white;
+      padding: .7rem 1.5rem;
+      width: 5rem;
+      position: relative;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border-radius: 2rem;
+      text-decoration: none;
+      color: black;
+    }
+    span {
+      margin-bottom: 1rem;
+    }
+  }
+  .front, .back {
+    font-family: 'Cabin', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px 20px 20px;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  &:hover {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+}

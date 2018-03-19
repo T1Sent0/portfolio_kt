@@ -57,41 +57,16 @@ body {
     }
   }
   .project-slider {
-    div.swiper-wrapper {
+    margin-bottom: 3rem;
+    .swiper-wrapper {
       width: 25rem;
-      height: 35rem;
-      perspective: 1200px;
-      transform-style: preserve-3d;
       position: relative;
       .swiper-slide-shadow-left, .swiper-slide-shadow-right {
         display: none;
       }
-      .swiper-slide {
-        position: relative;
-        div {
-          transform-style: preserve-3d;
-          transition: .7s linear;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          will-change: transform;
-          &:hover {
-            transform: rotateY( 180deg ) !important;
-            transition: background 5s;
-            backface-visibility: hidden;
-            background: white;
-          }
-          &.bidva {
-            background: url("./img/slider-project/bidva.png") center/cover no-repeat;
-          }
-          &.ipaar {
-            background: url("./img/slider-project/ipaar.png") center/cover no-repeat;
-          }
-        }
-      }
-
     }
   }
+
 }
 
 @media (max-width: 640px) {

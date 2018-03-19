@@ -23,7 +23,6 @@ block main
                             when 2
                                 span.active=text
                 div.project-slider.swiper-container
-                    div.swiper-wrapper
-                        each className in ["bidva", "ipaar", "ipaar"]
-                            div.swiper-slide
-                                div(class=className)
+                    include ../../components/slider-project/slider-project
+                    +slide()
+

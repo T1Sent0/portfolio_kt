@@ -1,0 +1,32 @@
+mixin slide()
+    div.swiper-wrapper
+        each className, index in ["bidva", "ipaar", "ipaar"]
+
+                if index === 0
+                    div.swiper-slide
+                        div.transform
+                            div.front
+                                div(class=className)
+                            +generate('back', 'Би - 2', 'Тут будет какой-то очень длинный но кстати не обязательно текст', '#')
+                        div.bidvalogo
+                if index === 1
+                    div.swiper-slide
+                        div.transform
+                            div.front
+                                div(class=className)
+                            +generate('back', 'Ипаар', 'Тут будет какой-то очень длинный но кстати не обязательно текст', '#')
+                        div.logo-ipaar
+                if index === 2
+                    div.swiper-slide
+                        div.transform
+                            div.front
+                                div(class=className)
+                            +generate('back', 'Ипаар', 'Тут будет какой-то очень длинный но кстати не обязательно текст', '#')
+                        div.logo-ipaar
+
+mixin generate(classFlip, titleCardFlip, textCardFlip, linkMore)
+    div(class=classFlip)
+        h1=titleCardFlip
+        span=textCardFlip
+        a(href=linkMore) Подробнее
+

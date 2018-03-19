@@ -1,0 +1,10 @@
+mixin slide_logo()
+    div.swiper-wrapper
+        each className, index in ["bidvalogo", "logo-ipaar", "logo-ipaar"]
+            div.swiper-slide
+                if index === 0
+                    div(class=className)
+                if index === 1
+                    div(class=className)
+                if index === 2
+                    div(class=className)
