@@ -8,6 +8,7 @@ let slider2 = new Slider('.project-slider', {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 'auto',
+    autoHeight: true,
     coverflowEffect: {
         rotate: 0,
         stretch: 0,
