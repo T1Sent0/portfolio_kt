@@ -1,0 +1,22 @@
+mixin descriptionProject(title, textTask, textDescrProj, ...service)
+    div.container
+        div.container-description
+            h1.title--project=title
+            div.container--task
+                h2 Задача
+                span=textTask
+            div.container--descr
+                h2 Описание проекта
+                span=textDescrProj
+            div.container--service
+                h2 Предоствленные услуги
+                ul
+                    each category, index in service
+                        li=category
+        div.swiper-slide.descrProj
+            div.swiper-wrapper
+                each className, index in ['hunter', 'bidva', 'ipaar']
+                    div.swiper-slide(class=className)
+        div.nav
+            div.button-slider-descr-prev.swiper-button-prev
+            div.button-slider-descr-ntxt.swiper-button-next

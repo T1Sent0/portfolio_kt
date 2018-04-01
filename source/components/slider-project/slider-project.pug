@@ -7,26 +7,32 @@ mixin slide()
                         div.transform
                             div.front
                                 div(class=className)
-                            +generate('back', 'Би - 2', 'Тут будет какой-то очень длинный но кстати не обязательно текст', '#')
+                            +generate('back', 'Би - 2', 'Тут будет какой-то очень длинный но кстати не обязательно длинный', 'Задачи', '#', 'Создание сайта', 'Создание логотипа')
                         div.bidvalogo
                 if index === 1
                     div.swiper-slide
                         div.transform
                             div.front
                                 div(class=className)
-                            +generate('back', 'Ипаар', 'Тут будет какой-то очень длинный но кстати не обязательно текст', '#')
+                            +generate('back', 'Ипаар', 'Тут будет какой-то очень длинный но кстати не обязательно длинный', 'Задачи','#', 'Создание сайта', 'Создание логотипа')
                         div.logo-ipaar
                 if index === 2
                     div.swiper-slide
                         div.transform
                             div.front
                                 div(class=className)
-                            +generate('back', 'Ипаар', 'Тут будет какой-то очень длинный но кстати не обязательно текст', '#')
+                            +generate('back', 'Ипаар', 'Тут будет какой-то очень длинный но кстати не обязательно длинный', 'Задачи', '#', 'Создание сайта', 'Создание логотипа')
                         div.logo-ipaar
-
-mixin generate(classFlip, titleCardFlip, textCardFlip, linkMore)
+    div.nav
+        div.button-portfolio-prev.swiper-button-prev
+        div.button-portfolio-ntxt.swiper-button-next
+mixin generate(classFlip, titleCardFlip, textCardFlip, titleTask, linkMore, ...ul)
     div(class=classFlip)
         h1=titleCardFlip
         span=textCardFlip
+        h2=titleTask
+        ul
+            each textUl, index in ul
+                li=textUl
         a(href=linkMore) Подробнее
 
