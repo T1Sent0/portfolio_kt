@@ -3,6 +3,7 @@
   margin: 0 0 0 3.48rem;
   padding: 3rem 6rem;
   background: #f0f0eb;
+  font-family: ProximaNova_Regilar;
 }
 
 .container-description {
@@ -10,6 +11,12 @@
   flex-flow: column;
   flex: 1;
   margin-right: 3rem;
+  h1 {
+    font-family: ProximaNova-Black;
+  }
+  h2 {
+    font-weight: bold;
+  }
 }
 
 .descrProj {
