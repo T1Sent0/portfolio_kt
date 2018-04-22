@@ -7,8 +7,9 @@ let descrProj = new Swiper('.descrProj', {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 1,
+    autoHeight: false,
     navigation: {
-        nextEl: '.button-slider-descr-ntxt',
+        nextEl: '.button-slider-descr-next',
         prevEl: '.button-slider-descr-prev',
     },
 });

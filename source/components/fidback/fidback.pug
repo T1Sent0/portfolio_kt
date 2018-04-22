@@ -1,26 +1,16 @@
-div.conatiner-fidback
-    div.container-logo-company
-        h1 Отзывы
-        div.logo-company-slider.swiper-container
-            div.swiper-wrapper
-                div.swiper-slide
-                    div.grid-logo
-                        div.grid-col
-                            div.grid-row
-                            div.grid-row
-                            div.grid-row
-                        div.grid-col
-                            div.grid-row
-                            div.grid-row
-                            div.grid-row
-                div.swiper-slide
-                    div.grid-logo
-                        div.grid-col
-                            div.grid-row
-                            div.grid-row
-                            div.grid-row
-                        div.grid-col
-                            div.grid-row
-                            div.grid-row
-                            div.grid-row
-    div.container-video
+mixin createFidback()
+    div.conatiner-fidback
+        div.container-logo-company
+            h1 Отзывы
+            div.logo-company-slider.swiper-container
+                div.swiper-wrapper
+                    div.swiper-slide
+                        div.grid-logo
+                            div.grid-col
+                                each className, index in ['logo--bidva', 'logo--russ-denta', 'logo--luxer']
+                                    div.grid-row(class=className)
+                            div.grid-col
+                                each className, index in ['logo--barberi', 'logo--greenoteka', 'ipaar-logo']
+                                    div.grid-row(class=className)
+        div.container-video
+            iframe(src="https://www.youtube.com/embed/GJMVHBoJ4Zc" frameborder="0" allowfullscreen)

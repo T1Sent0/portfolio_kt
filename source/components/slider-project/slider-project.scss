@@ -39,6 +39,16 @@
       background-size: 50%;
     }
   }
+  .button-portfolio-prev, .button-portfolio-next {
+    top: 90%;
+    background: url("./img/arrow.png") no-repeat center/cover;
+    background-size: 100%;
+    width: 2rem;
+  }
+
+  .button-portfolio-next {
+    transform: rotate(180deg);
+  }
 }
 .transform {
   text-align: center;
@@ -123,4 +133,8 @@
     -ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }
+}
+
+@media (max-width: 640px) {
+  
 }

@@ -2,7 +2,5 @@ div.container-license
     h1 Сертификаты
     div.slider-license.swiper-container
         div.swiper-wrapper
-            div.swiper-slide
-            div.swiper-slide
-            div.swiper-slide
-            div.swiper-slide
+            each className, index in ['license', 'license', 'license', 'license', 'license', 'license', 'license', 'license', 'license', 'license']
+                div.swiper-slide(class=className)

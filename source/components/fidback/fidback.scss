@@ -6,15 +6,92 @@
   h1 {
     font-family: 'ProximaNova-Black', serif;
   }
+
+  .grid-logo {
+    @supports (display: grid) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    height: 20rem;
+  }
+
+  .grid-col {
+    @supports (display: grid) {
+      display: grid;
+    }
+  }
+
+  .grid-row {
+    cursor: pointer;
+    @supports (display: grid) {
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+
+  .logo--bidva {
+    background: url("./img/bi-dva-block-fidback.png") no-repeat left center;
+    background-size: 70%;
+  }
+
+  .logo--russ-denta {
+    background: url("./img/denta-rus-block-fidback.png") no-repeat left center;
+    background-size: 70%;
+  }
+
+  .logo--luxer {
+    background: url("./img/luxer-block-fidback.png") no-repeat left center;
+    background-size: 70%;
+  }
+
+  .logo--barberi {
+    background: url("./img/barberi-block-fidback.png") no-repeat center;
+    background-size: 70%;
+  }
+
+  .logo--greenoteka {
+    background: url("./img/greenoteka-block-fidback.png") no-repeat center;
+    background-size: 70%;
+  }
+
+  .ipaar-logo {
+    background: url("./img/ipaar-block-fidback.png") no-repeat center;
+    background-size: 70%;
+  }
 }
 .container-logo-company {
-  padding: 2rem 5rem;
+  padding: 2rem 5rem 5rem;
   width: 40%;
   background: #56c3e7;
 }
 
 .container-video {
-  padding: 2rem 5rem;
+  padding: 4rem 5rem;
+  box-sizing: border-box;
   width: 60%;
+  height: 28rem;
   background: #3f4246;
+  position: relative;
+  .button-play {
+    border: .4rem solid #a81918;
+    border-radius: 50%;
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: calc(50% - 2rem);
+    left: calc(50% - 2rem);
+    color: #a81918;
+    z-index: 1;
+    cursor: pointer;
+    span {
+      cursor: pointer;
+      font-size: 2rem;
+    }
+  }
+  iframe, video {
+    width: 100%;
+    height: 100%;
+  }
 }

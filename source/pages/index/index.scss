@@ -69,25 +69,37 @@ body {
 }
 
 @media (max-width: 640px) {
-  .naw-arrow {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+
+  .content-project-slider {
+    padding: 20rem 6.06rem;
+    margin-left: 0;
+    .container-year {
+      span {
+        font-size: 7rem;
+      }
+    }
   }
 
-  .swiper-button-prev, .swiper-button-next {
-    position: relative;
-    top: initial;
-    bottom: 0;
-    background: url("./img/navarrow.png") #2a2d32 50% 50% no-repeat;
-    width: 50%;
-  }
-  .swiper-button-prev {
-    left: 0;
-  }
-  .swiper-button-next {
-    right: 0;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
+
+  //.naw-arrow {
+  //  display: -webkit-box;
+  //  display: -ms-flexbox;
+  //  display: flex;
+  //}
+  //
+  //.swiper-button-prev, .swiper-button-next {
+  //  position: relative;
+  //  top: initial;
+  //  bottom: 0;
+  //  background: url("./img/navarrow.png") #2a2d32 50% 50% no-repeat;
+  //  width: 50%;
+  //}
+  //.swiper-button-prev {
+  //  left: 0;
+  //}
+  //.swiper-button-next {
+  //  right: 0;
+  //  -webkit-transform: rotate(180deg);
+  //          transform: rotate(180deg);
+  //}
 }

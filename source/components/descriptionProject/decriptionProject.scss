@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  margin: 0 0 0 3.48rem;
+  padding: 3rem 6rem 0rem;
+  background: #f0f0eb;
+  font-family: ProximaNova_Regilar;
+}
+
+.container-description {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+  margin-right: 3rem;
+  h1 {
+    font-family: ProximaNova-Black;
+    margin-top: 0;
+  }
+  h2 {
+    font-weight: bold;
+  }
+}
+
+.descrProj {
+  display: flex;
+  flex: 1;
+  width: 50%;
+  overflow: hidden;
+  height: 35rem;
+  position: relative;
+  .hunter {
+    background: url("./img/hunter.png") no-repeat;
+    background-size: 100%;
+    height: inherit;
+  }
+
+  .button-slider-descr-prev, .button-slider-descr-next {
+    background: url("img/arrow-white.png") no-repeat center #2a2d32;
+    height: 2rem;
+    width: 6rem;
+    background-size: 30%;
+    top: 97.5%;
+  }
+
+  .button-slider-descr-prev {
+    left: 68.5%;
+  }
+
+  .button-slider-descr-next {
+    transform: rotate(180deg);
+  }
+
+}
